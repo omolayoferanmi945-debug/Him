@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy 30th Birthday Dinero</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    section {
+      min-height: 100vh;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #b3003c;
+    }
+    .fireworks {
+      width: 100%;
+      height: 100vh;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.8);
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #b3003c;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#section1">Welcome</a>
+    <a href="#section30">Final</a>
+  </nav>
+
+  <section id="section1">
+    <h1>Happy 30th Birthday Oluwasegun “Dinero”</h1>
+    <p>Welcome to your interactive birthday journey!</p>
+  </section>
+
+  <section id="section2"><h2>Countdown</h2><p id="countdown"></p></section>
+  <section id="section3"><h2>Childhood Memories</h2><p>Photos & stories from your early years.</p></section>
+  <section id="section4"><h2>Teenage Years</h2><p>Highlights from adolescence.</p></section>
+  <section id="section5"><h2>Adult Life</h2><p>Milestones and achievements.</p></section>
+  <section id="section6"><h2>Timeline</h2><p>Your journey so far.</p></section>
+  <section id="section7"><h2>Our Love Story</h2><p>How we met and grew together.</p></section>
+  <section id="section8"><h2>30 Fun Facts</h2><p>Quirky things about you.</p></section>
+  <section id="section9"><h2>Quiz</h2><p>How well do you know Dinero?</p></section>
+  <section id="section10"><h2>Wishes Wall</h2><p>Messages from loved ones.</p></section>
+  <section id="section11"><h2>Video Montage</h2><p>Clips of birthday wishes.</p></section>
+  <section id="section12"><h2>Playlist</h2><p>Your favorite songs.</p></section>
+  <section id="section13"><h2>Movies</h2><p>Your favorite films.</p></section>
+  <section id="section14"><h2>Dreams & Goals</h2><p>Looking ahead.</p></section>
+  <section id="section15"><h2>Romantic Dedication</h2><p>A heartfelt letter from me.</p></section>
+  <section id="section16"><h2>Virtual Gift Box</h2><p>Surprises inside.</p></section>
+  <section id="section17"><h2>Travel Memories</h2><p>Places you’ve been.</p></section>
+  <section id="section18"><h2>Bucket List</h2><p>Things you want to do.</p></section>
+  <section id="section19"><h2>Game</h2><p>Birthday fun!</p></section>
+  <section id="section20"><h2>Quotes</h2><p>Words that inspire you.</p></section>
+  <section id="section21"><h2>Friends & Family</h2><p>Spotlight on loved ones.</p></section>
+  <section id="section22"><h2>30 Reasons You’re Loved</h2><p>From me and others.</p></section>
+  <section id="section23"><h2>Polls</h2><p>Fun birthday polls.</p></section>
+  <section id="section24"><h2>Creativity</h2><p>Your talents showcased.</p></section>
+  <section id="section25"><h2>Food & Drinks</h2><p>Your favorites.</p></section>
+  <section id="section26"><h2>Fashion Style</h2><p>Your iconic looks.</p></section>
+  <section id="section27"><h2>Milestone Numbers</h2><p>30 stats about your life.</p></section>
+  <section id="section28"><h2>Future Messages</h2><p>Notes for years ahead.</p></section>
+  <section id="section29"><h2>Memory Map</h2><p>Places tied to your story.</p></section>
+  <section id="section30" class="fireworks">
+    🎆 Happy 30th Birthday Dinero! 🎆
+  </section>
+
+  <script>
+    // Countdown timer
+    const countdown = document.getElementById('countdown');
+    const birthday = new Date('March 31, 2026 00:00:00').getTime();
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = birthday - now;
+      const days = Math.floor(distance / (1000*60*60*24));
+      const hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+      const minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+      const seconds = Math.floor((distance % (1000*60))/1000);
+      countdown.innerHTML = days+"d "+hours+"h "+minutes+"m "+seconds+"s ";
+    }, 1000);
+  </script>
+</body>
+  </html>
